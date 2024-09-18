@@ -1,0 +1,6 @@
+.disabled-link {
+    pointer-events: none; /* Prevent clicks */
+    text-decoration: line-through !important;
+  }
+  
+ 

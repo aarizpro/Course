@@ -1,0 +1,59 @@
+/* General Styles */
+.sidebar-container {
+  background-color: #1e3dc9;
+  min-width: 250px;
+  max-width: 250px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.sidebar-container .rounded-image {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.sidebar-container .text-container p {
+  font-size: 1rem;
+}
+
+.content-area {
+  padding: 20px;
+  transition: margin-left 0.3s ease; /* Smooth transition */
+}
+
+/* Custom Button */
+.custom-button {
+  border-radius: 50px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .sidebar-container {
+    position: relative;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .content-area {
+    margin-left: 0; /* No margin on smaller screens */
+  }
+
+  .sidebar-container .text-container p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .content-area {
+    margin-left: 250px; /* Adjust margin for desktop view */
+  }
+}

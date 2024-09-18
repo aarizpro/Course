@@ -1,0 +1,59 @@
+.sidebar-container {
+  width: 100%;
+  max-width: 450px;
+  background-color: #1b63f2;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Ensures the sidebar takes full height */
+  overflow-y: auto; /* Adds scrolling for longer content */
+}
+
+@media (max-width: 768px) {
+  .sidebar-container {
+      width: 100%;
+      position: relative;
+      padding-top: 20px;
+      position: static; /* Moves sidebar to top in mobile view */
+      max-width: none; /* Allows full width */
+  }
+}
+
+.custom-button {
+  background-color: whitesmoke;
+  font-weight: bolder;
+  font-size: 1rem;
+  transition: font-size 0.3s ease;
+  border: 2px solid #f1eeee;
+}
+
+.custom-button:hover {
+  font-size: 1.1rem;
+}
+
+.icon-spacing {
+  margin-right: 0.5rem;
+}
+
+.rounded-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text-container {
+  font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  .rounded-image {
+      width: 100px;
+      height: 100px;
+  }
+  
+  .text-container {
+      font-size: 16px;
+  }
+}
